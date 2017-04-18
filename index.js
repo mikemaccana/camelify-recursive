@@ -1,5 +1,4 @@
 var changeCase = require('change-case');
-require('es6-shim');
 
 var log = console.log.bind(log);
 
