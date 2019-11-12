@@ -7,6 +7,8 @@ var original = {
   "results": {
     "page": 1,
     "per_page": 30,
+    "id": 123456,
+    "banana_id": 123,
     "total_pages": 1,
     "total_count": 0,
     "filings": []
