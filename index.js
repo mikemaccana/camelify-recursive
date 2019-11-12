@@ -2,27 +2,12 @@ var changeCase = require('change-case');
 
 var log = console.log.bind(log);
 
-var kind = function(item) {
-	var getPrototype = function(item) {
-		return Object.prototype.toString.call(item).slice(8, -1);
-	};
-	var kind, Undefined;
-	if (item === null ) {
-		kind = 'null';
-	} else {
-		if ( item === Undefined ) {
-			kind = 'undefined';
-		} else {
-			var prototype = getPrototype(item);
-			if ( ( prototype === 'Number' ) && isNaN(item) ) {
-				kind = 'NaN';
-			} else {
-				kind = prototype;
-			}
-		}
-	}
-	return kind;
-};
+var kind = function (object) {
+  if (object && object.constructor && object.constructor.name) {
+    return object.constructor.name
+  }
+  return null
+}
 
 // Inspired from https://gist.github.com/Sneagan/8366247
 var camelifyObject = function(obj) {
