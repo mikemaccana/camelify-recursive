@@ -31,9 +31,8 @@ var camelifyObject = function(obj) {
 		if ( oldKeyName.includes('_') ) {
 			var oldValue = obj[oldKeyName]
 			
-			// Fix '_id' so it becomes '_ID' and later 'ID'
-			// Otherwise it'd be 'Id' which is poor
-			oldKeyName = oldKeyName.replace('_id','_ID')
+			// Fix 'id' so it becomes 'ID' - prevents 'Id' in output which is poor
+			oldKeyName = oldKeyName.replace('_id','_ID').replace(/^id$/,'ID')
 
 			var newKeyName = changeCase.camelCase(oldKeyName);
 			obj[newKeyName] = oldValue;

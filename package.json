@@ -1,6 +1,6 @@
 {
   "name": "camelify-recursive",
-  "version": "1.2.0",
+  "version": "2.0.1",
   "description": "Recursively convert an object's keys to camelCase",
   "main": "index.js",
   "scripts": {
