@@ -1,19 +1,35 @@
 {
-  "name": "camelify-recursive",
-  "version": "2.0.1",
-  "description": "Recursively convert an object's keys to camelCase",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "camelCase",
-    "underscores",
-    "API"
-  ],
-  "author": "Mike MacCana <mike.maccana@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "change-case": "^3.1.0"
-  }
+	"name": "camelify-recursive",
+	"version": "2.0.2",
+	"description": "Recursively convert an object's keys to camelCase",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx mocha --ui tdd"
+	},
+	"keywords": [
+		"camelCase",
+		"underscore",
+		"API",
+		"response",
+		"REST",
+		"snakecase",
+		"case"
+	],
+	"author": "Mike MacCana <mike.maccana@gmail.com>",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"assert": "^2.0.0",
+		"mocha": "^6.2.2"
+	},
+	"prettier": {
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 2,
+		"useTabs": true,
+		"trailingComma:": "es5",
+		"bracketSpacing": false,
+		"endOfLine": "lf",
+		"printWidth": 1000
+	}
 }
