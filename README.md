@@ -1,4 +1,4 @@
-# Recursively convert keys to camelCase
+# Recursively convert API responses to camelCase
 
 Have an API response from someone that doesn't use JavaScript?
 
