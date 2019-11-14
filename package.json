@@ -1,7 +1,7 @@
 {
 	"name": "camelify-recursive",
-	"version": "2.0.4",
-	"description": "Recursively convert an object's keys to camelCase",
+	"version": "2.0.5",
+	"description": "Recursively convert an API response to camelCase",
 	"main": "index.js",
 	"scripts": {
 		"test": "npx mocha --ui tdd"
@@ -21,6 +21,10 @@
 	"devDependencies": {
 		"assert": "^2.0.0",
 		"mocha": "^6.2.2"
+	},
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/mikemaccana/camelify-recursive"
 	},
 	"prettier": {
 		"semi": false,

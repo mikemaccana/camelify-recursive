@@ -1,28 +1,14 @@
 # Recursively convert API responses to camelCase
 
-Have an API response from someone that doesn't use JavaScript?
+Have an API response that doesn't use JavaScript-style casing?
 
-Want to be able to use the keys without having to fix the case all the time?
+Want to be able to use the data in the response without having to fix the case all the time?
 
 Let camelify do the work.
 
-It will **recursively** convert all the keys in the object to camelCase, so you can use those keys directly in your JavaScript (or JSON database) and not have to worry about converting things manually all the time.
+Cwmelify-recursive will **recursively** convert all the keys in the object to camelCase, so you can use those keys directly in your JavaScript (or JSON database) and not have to worry about converting things manually all the time.
 
-The word 'ID' will always be in uppercase as you'd expect with proper API results.
-
-## Usage
-
-Just:
-
-```javascript
-const camelify = require('camelify-recursive')
-```
-
-Then, to fix the object `someObject`
-
-```javascript
-someObject = camelify(someObject)
-```
+The word `ID` will always be in uppercase as you'd expect.
 
 ## Before
 
@@ -58,6 +44,18 @@ someObject = camelify(someObject)
 };
 ```
 
-## Can I have emoji camels?
+## Usage
 
-🐫🐪🐫🐪🐫🐪🐫🐪🐫🐪
+Just:
+
+```javascript
+const camelify = require('camelify-recursive')
+```
+
+Then, to fix the object `someObject`
+
+```javascript
+someObject = camelify(someObject)
+```
+
+
